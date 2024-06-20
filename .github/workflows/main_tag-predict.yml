@@ -31,7 +31,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: download nltk
-        run: python -m dowload_nltk
+        run: python -m nltk.downloader punkt stopwords averaged_perceptron_tagger wordnet
 
       - name: pytest
         run: pytest test_final_model.py
