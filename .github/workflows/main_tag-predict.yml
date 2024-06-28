@@ -34,4 +34,6 @@ jobs:
         run: python -m nltk.downloader punkt stopwords averaged_perceptron_tagger wordnet
 
       - name: pytest
-        run: pytest ./Final_code/test_final_model.py
+        run: |
+              cd Final_code
+              pytest test_final_model.py
